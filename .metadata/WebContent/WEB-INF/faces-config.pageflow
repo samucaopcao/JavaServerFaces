@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15948637429880" configfile="/JavaServerFaces/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" id="pf15948644409181" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf15948663435738 pf15948663435739 pf159486644734412" path="/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="errorPage.xhtml" id="pf159486634357310" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15948663435738" path="/errorPage.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="loginPage.xhtml" id="pf159486634357311" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf15948663435739" path="/loginPage.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="erroGrave.xhtml" id="pf159486644734413" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf159486644734412" path="/erroGrave.xhtml"/>
+  <links id="pf15948663435738" target="pf159486634357310" source="pf15948644409181" outcome="erro" fromaction="#{controlePrincipal.geraErro()}"/>
+  <links id="pf15948663435739" target="pf159486634357311" source="pf15948644409181" outcome="login"/>
+  <links id="pf159486644734412" target="pf159486644734413" source="pf15948644409181" outcome="erro" fromaction="#{controlePrincipal.geraErroGrave()}"/>
+</pageflow:Pageflow>
