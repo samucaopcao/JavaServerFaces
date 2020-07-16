@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Componentes para Saída de Textos e Imagens</title>
+</h:head>
+<h:body>
+
+	<h:form id="formulario" prependId="false">
+		<h:commandButton value="Gerar texto"
+			action="#{controleComponentes.geraTexto()}" id="btnGerar" /><br />
+		<h:commandLink action="#{controleComponentes.geraTexto()}"><br /><br />
+			<h:graphicImage library="images" name="capitao.png" />
+		</h:commandLink>
+		
+	</h:form>
+	<h:outputText value="#{controleComponentes.texto}" escape="false" />
+	<br />
+	<h:outputFormat value="Eu moro em {0}, {1}">
+		<f:param value="Passo Fundo " />
+		<f:param value="Rio Grande do Sul" />
+	</h:outputFormat>
+	<br />
+	<h:graphicImage library="images" name="capitao.png" />
+	<h:graphicImage
+		url="https://img.icons8.com/doodle/96/000000/iron-man.png" />
+	<h:graphicImage value="#{resource['images:capitao.png']}" />
+</h:body>
+</html>

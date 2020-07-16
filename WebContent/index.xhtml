@@ -5,29 +5,32 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html">
 
-<h:head>
-	<title>Projeto Java Server Faces</title>
-</h:head>
-<body>
-	<h:outputLabel value="#{controlePrincipal.mensagem}" />
-	<br />
-	<h:form>
+<f:view encoding="ISO-8859-1" contextType="text/html">
+	<h:head>
+		<title>Projeto Java Server Faces</title>
+	</h:head>
+	<body>
+		<h:outputLabel value="#{controlePrincipal.mensagem}" />
 		<br />
-		<h:commandLink action="sobre" value="Sobre...Navegação Estática" />
-		<br />
-		<h:commandLink action="#{controlePrincipal.sobre()}"
-			value="Página sobre - Agora com navegação Dinâmica" />
-		<br />
-		<h:commandLink action="#{controlePrincipal.sobreRedirecionado()}"
-			value="Sobre...Redirecionado" />
-		<br />
-		<h:commandLink action="#{controlePrincipal.geraErro()}" value="Erro" />
-		<br />
-		<h:commandLink action="#{controlePrincipal.geraLogin()}" value="Login" />
-		<br />
-		<h:commandLink action="#{controlePrincipal.geraErroGrave()}"
-			value="Erro Grave" />
-		<br />
-	</h:form>
-</body>
+		<h:form>
+			<br />
+			<h:commandLink action="sobre" value="Sobre...Navegação Estática" />
+			<br />
+			<h:commandLink action="#{controlePrincipal.sobre()}"
+				value="Página sobre - Agora com navegação Dinâmica" />
+			<br />
+			<h:commandLink action="#{controlePrincipal.sobreRedirecionado()}"
+				value="Sobre...Redirecionado" />
+			<br />
+			<h:commandLink action="#{controlePrincipal.geraErro()}" value="Erro" />
+			<br />
+			<h:commandLink action="#{controlePrincipal.geraLogin()}"
+				value="Login" />
+			<br />
+			<h:commandLink action="#{controlePrincipal.geraErroGrave()}"
+				value="Erro Grave" />
+			<br />
+		</h:form>
+	</body>
+</f:view>
 </html>
