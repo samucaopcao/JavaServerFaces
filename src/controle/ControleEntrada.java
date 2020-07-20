@@ -33,7 +33,8 @@ public class ControleEntrada implements Serializable {
 	}
 
 	public String processa() {
-		saida = "";
+	
+		saida = "<br/>";
 		saida += "ID: " + id + "<br/>";
 		saida += "Nome: " + nome + "<br/>";
 		saida += "Senha: " + senha + "<br/>";
