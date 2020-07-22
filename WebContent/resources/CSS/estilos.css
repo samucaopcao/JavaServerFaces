@@ -1,0 +1,24 @@
+.tituloTabela {
+	font-size: large;
+	font-style: italic;
+}
+
+.tabela {
+	border: thin solid black;
+	background: lavender;
+	border-radius: 25px;
+	padding: 15px;
+}
+
+.tabelaCabelhaco {
+	text-align: center;
+	font-style: italic;
+	color: snow;
+	background: teal;
+}
+
+.tabelaRodape {
+	text-align: center;
+	color: snow;
+	background: teal;
+}
