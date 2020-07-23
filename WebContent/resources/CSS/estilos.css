@@ -1,13 +1,11 @@
 .tituloTabela {
-	font-size: large;
+	font-size: 0.60em;;
 	font-style: italic;
 }
 
 .tabela {
 	border: thin solid black;
 	background: lavender;
-	border-radius: 25px;
-	padding: 15px;
 }
 
 .tabelaCabelhaco {
@@ -21,4 +19,56 @@
 	text-align: center;
 	color: snow;
 	background: teal;
+}
+
+.colunaIDCabecalho {
+	font-style: italic;
+	text-align: left;
+}
+
+.colunaIDRodape {
+	font-style: italic;
+	text-align: center;
+	font-size: 0.60em;
+}
+
+.colunaCabecalho {
+	font-style: bold;
+	text-align: center;
+}
+
+.colunaRodape {
+	font-style: bold;
+	text-align: center;
+	font-size: 0.6ecm;
+}
+
+.primeiraLinha {
+	text-align: center;
+	background: mediumturquoise;
+}
+
+.segundaLinha {
+	text-align: center;
+	background: powderblue;
+}
+
+.terceiraLinha {
+	text-align: center;
+	background: paleturquoise;
+}
+
+.primeiraColuna {
+	text-align: center;
+	background: mediumturquoise;
+}
+
+.segundaColuna {
+	text-align: center;
+	background: powderblue;
+}
+
+.terceiraColuna {
+	text-align: center;
+	background: paleturquoise;
 }
